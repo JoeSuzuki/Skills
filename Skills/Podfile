@@ -6,5 +6,6 @@ target 'Skills' do
   use_frameworks!
 
   # Pods for Skills
+  pod 'Kingfisher', '~> 4.0'
 
 end
