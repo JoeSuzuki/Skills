@@ -1,6 +1,6 @@
 import UIKit
 
-class GroupHeaderCell: UICollectionViewCell {
+class HomeHeaderCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)

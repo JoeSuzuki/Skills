@@ -12,7 +12,7 @@
 		FF2EEF722027B24700BCEBB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2EEF702027B24700BCEBB1 /* Main.storyboard */; };
 		FF2EEF742027B24700BCEBB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF2EEF732027B24700BCEBB1 /* Assets.xcassets */; };
 		FF2EEF772027B24700BCEBB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2EEF752027B24700BCEBB1 /* LaunchScreen.storyboard */; };
-		FFBD892620390DCE00196CB7 /* HomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD891920390DCD00196CB7 /* HomeHeader.swift */; };
+		FFBD892620390DCE00196CB7 /* HomeHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD891920390DCD00196CB7 /* HomeHeaderCell.swift */; };
 		FFBD892720390DCE00196CB7 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD891A20390DCD00196CB7 /* HomeCell.swift */; };
 		FFBD892820390DCE00196CB7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD891C20390DCE00196CB7 /* Constants.swift */; };
 		FFBD892920390DCE00196CB7 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD891E20390DCE00196CB7 /* HomeController.swift */; };
@@ -33,7 +33,7 @@
 		FF2EEF732027B24700BCEBB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF2EEF762027B24700BCEBB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF2EEF782027B24700BCEBB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FFBD891920390DCD00196CB7 /* HomeHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeader.swift; sourceTree = "<group>"; };
+		FFBD891920390DCD00196CB7 /* HomeHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeaderCell.swift; sourceTree = "<group>"; };
 		FFBD891A20390DCD00196CB7 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		FFBD891C20390DCE00196CB7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FFBD891E20390DCE00196CB7 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 		FFBD891820390DCD00196CB7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FFBD891920390DCD00196CB7 /* HomeHeader.swift */,
+				FFBD891920390DCD00196CB7 /* HomeHeaderCell.swift */,
 				FFBD891A20390DCD00196CB7 /* HomeCell.swift */,
 			);
 			name = Views;
@@ -286,7 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFBD892720390DCE00196CB7 /* HomeCell.swift in Sources */,
-				FFBD892620390DCE00196CB7 /* HomeHeader.swift in Sources */,
+				FFBD892620390DCE00196CB7 /* HomeHeaderCell.swift in Sources */,
 				FFBD892C20390DCE00196CB7 /* UISegmentedControl+Utility.swift in Sources */,
 				FFBD892E20390DCE00196CB7 /* UserTwo.swift in Sources */,
 				FFBD892B20390DCE00196CB7 /* UIColor+Utility.swift in Sources */,
