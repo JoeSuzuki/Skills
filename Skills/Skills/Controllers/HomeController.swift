@@ -9,7 +9,7 @@ class HomeController: UICollectionViewController,UICollectionViewDelegateFlowLay
         super.viewDidLoad()
         view.backgroundColor = .white
         
-        collectionView?.backgroundColor = UIColor.main.mainBlue
+        collectionView?.backgroundColor = UIColor.main.mainColor
         collectionView?.register(HomeCell.self, forCellWithReuseIdentifier: cellId)
         collectionView?.register(HomeHeaderCell.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId)
         

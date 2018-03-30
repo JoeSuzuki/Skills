@@ -9,8 +9,8 @@ extension UIColor {
     }
     
     struct main {
-        static let mainBlue = UIColor(r: 90, g: 200, b: 250)
-        static let backgroundGrey = UIColor(r: 230, g: 230, b: 230)
+        static let mainColor = UIColor(r: 255, g: 59, b: 48)
+        static let backgroundGrey = UIColor(r: 142, g: 142, b: 145)
     } 
 }
 

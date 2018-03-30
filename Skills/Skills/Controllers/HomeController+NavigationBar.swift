@@ -3,19 +3,17 @@ import UIKit
 extension HomeController {
     
     func setupNavigationBarItems() {
-        setupRightNavItems()
-        setupLeftNavItems()
         setupRemainNavItems()
     }
     
     private func setupRemainNavItems() {
-        let tittleImageView = UIImageView(image: #imageLiteral(resourceName: "Flex").withRenderingMode(.alwaysTemplate))
+        let tittleImageView = UIImageView(image: #imageLiteral(resourceName: "Image").withRenderingMode(.alwaysTemplate))
         tittleImageView.tintColor = .white
         tittleImageView.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
         tittleImageView.contentMode = .scaleAspectFit
         navigationItem.titleView = tittleImageView
         
-        navigationController?.navigationBar.barTintColor = UIColor.main.mainBlue
+        navigationController?.navigationBar.barTintColor = UIColor.main.mainColor
         navigationController?.navigationBar.isTranslucent = false
 
         navigationController?.navigationBar.shadowImage = UIImage()
@@ -35,7 +33,7 @@ extension HomeController {
     
     private func setupLeftNavItems() {
         let followButton = UIButton(type: .system)
-        followButton.setImage(#imageLiteral(resourceName: "Clock").withRenderingMode(.alwaysOriginal), for: .normal)
+        followButton.setImage(#imageLiteral(resourceName: "Image").withRenderingMode(.alwaysOriginal), for: .normal)
         followButton.widthAnchor.constraint(equalToConstant: 34).isActive = true
         followButton.heightAnchor.constraint(equalToConstant: 34).isActive = true
 
@@ -44,7 +42,7 @@ extension HomeController {
     
     private func setupRightNavItems() {
         let searchButton = UIButton(type: .system)
-        searchButton.setImage(#imageLiteral(resourceName: "Home").withRenderingMode(.alwaysOriginal), for: .normal)
+        searchButton.setImage(#imageLiteral(resourceName: "Image").withRenderingMode(.alwaysOriginal), for: .normal)
         searchButton.widthAnchor.constraint(equalToConstant: 34).isActive = true
         searchButton.heightAnchor.constraint(equalToConstant: 34).isActive = true
 

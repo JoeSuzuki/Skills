@@ -8,6 +8,43 @@ class HomeCell: UICollectionViewCell {
         setupViews()
     }
     
+    let userDetailsView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+
+    let profileImageView: UIImageView = {
+        let groupView = UIImageView()
+        let url = URL(string: "https://avatars1.githubusercontent.com/u/23642941?s=460&v=4")
+        groupView.kf.setImage(with: url)
+        //        groupView.layer.cornerRadius = 5
+        groupView.contentMode = .scaleAspectFit
+        groupView.clipsToBounds = true
+        groupView.translatesAutoresizingMaskIntoConstraints = false
+        return groupView
+    }()
+ 
+    let userInfomationButton: UIButton = {
+        let groupView = UIImageView()
+        let url = URL(string: "https://avatars1.githubusercontent.com/u/23642941?s=460&v=4")
+        groupView.kf.setImage(with: url)
+        //        groupView.layer.cornerRadius = 5
+        groupView.contentMode = .scaleAspectFit
+        groupView.clipsToBounds = true
+        groupView.translatesAutoresizingMaskIntoConstraints = false
+        return groupView
+    }()
+
+    let userNameLabel: UILabel = {
+        let label = UILabel()
+        label.text = "  " + "Joe Suzuki"
+        label.textColor = .black
+        label.font = UIFont.boldSystemFont(ofSize: 16)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+
     let groupImageView: UIImageView = {
         let groupView = UIImageView()
 //        groupView.image = #imageLiteral(resourceName: "search")
@@ -20,20 +57,13 @@ class HomeCell: UICollectionViewCell {
         return groupView
     }()
     
-    let lightBlueView: UIView = {
-        let view = UIView()
-        view.backgroundColor = UIColor(r: 90, g: 200, b: 250, a: 0.5)
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
-    
     let detailsView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
-    
+
     let groupNameLabel: UILabel = {
         let label = UILabel()
         label.text = "Dr. Andy Office"
@@ -51,27 +81,42 @@ class HomeCell: UICollectionViewCell {
     func setupViews() {
         backgroundColor = .white
         
+        addSubview(profileImageView)
+        addSubview(userNameLabel)
+        addSubview(userDetailsView)
         addSubview(groupImageView)
-        addSubview(lightBlueView)
         addSubview(detailsView)
         addSubview(groupNameLabel)
         addSubview(groupCreaterNameLabel)
         
-        groupImageView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        groupImageView.topAnchor.constraint(equalTo: userDetailsView.bottomAnchor).isActive = true
         groupImageView.bottomAnchor.constraint(equalTo: detailsView.topAnchor).isActive = true
         groupImageView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         groupImageView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+     
+        userDetailsView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        userDetailsView.bottomAnchor.constraint(equalTo: groupImageView.topAnchor).isActive = true
+        userDetailsView.leftAnchor.constraint(equalTo: groupImageView.leftAnchor).isActive = true
+        userDetailsView.rightAnchor.constraint(equalTo: groupImageView.rightAnchor).isActive = true
+        userDetailsView.heightAnchor.constraint(equalToConstant: 45).isActive = true
         
-        lightBlueView.topAnchor.constraint(equalTo: groupImageView.topAnchor, constant: 160).isActive = true
-        lightBlueView.bottomAnchor.constraint(equalTo: groupImageView.bottomAnchor).isActive = true
-        lightBlueView.leftAnchor.constraint(equalTo: groupImageView.leftAnchor, constant: 250).isActive = true
-        lightBlueView.rightAnchor.constraint(equalTo: groupImageView.rightAnchor).isActive = true
-        
+        profileImageView.topAnchor.constraint(equalTo: userDetailsView.topAnchor, constant: 2).isActive = true
+        profileImageView.bottomAnchor.constraint(equalTo: userDetailsView.bottomAnchor, constant: 2).isActive = true
+        profileImageView.leftAnchor.constraint(equalTo: userDetailsView.leftAnchor, constant: 4).isActive = true
+        profileImageView.rightAnchor.constraint(equalTo: userNameLabel.leftAnchor).isActive = true
+        profileImageView.widthAnchor.constraint(equalToConstant: 41).isActive = true
+        profileImageView.heightAnchor.constraint(equalToConstant: 41).isActive = true
+
+        userNameLabel.topAnchor.constraint(equalTo: userDetailsView.topAnchor).isActive = true
+        userNameLabel.bottomAnchor.constraint(equalTo: userDetailsView.bottomAnchor).isActive = true
+        userNameLabel.leftAnchor.constraint(equalTo: profileImageView.rightAnchor, constant: 4).isActive = true
+        userNameLabel.rightAnchor.constraint(equalTo: userDetailsView.rightAnchor).isActive = true
+
         detailsView.topAnchor.constraint(equalTo: groupImageView.bottomAnchor).isActive = true
         detailsView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         detailsView.leftAnchor.constraint(equalTo: groupImageView.leftAnchor).isActive = true
         detailsView.rightAnchor.constraint(equalTo: groupImageView.rightAnchor).isActive = true
-        detailsView.heightAnchor.constraint(equalToConstant: 45).isActive = true
+        detailsView.heightAnchor.constraint(equalToConstant: 40).isActive = true
 
         groupNameLabel.topAnchor.constraint(equalTo: detailsView.topAnchor, constant:4).isActive = true
         groupNameLabel.bottomAnchor.constraint(equalTo: groupCreaterNameLabel.topAnchor).isActive = true
