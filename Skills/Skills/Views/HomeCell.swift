@@ -65,16 +65,16 @@ class HomeCell: UICollectionViewCell {
 
     let groupNameLabel: UILabel = {
         let label = UILabel()
-        label.text = "Dr. Andy Office"
-//        label.font = UIFont.boldSystemFont(ofSize: 16)
+        label.text = "iOS App Developer [OPEN]"
+        label.font = UIFont.boldSystemFont(ofSize: 15)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     let groupCreaterNameLabel: UILabel = {
         let label = UILabel()
-        label.text = "Dr. Andy"
-//        label.font = UIFont.boldSystemFont(ofSize: 15)
+        label.text = "#Programming"
+        label.font = UIFont.boldSystemFont(ofSize: 15)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -88,7 +88,6 @@ class HomeCell: UICollectionViewCell {
         addSubview(groupImageView)
         addSubview(detailsView)
         addSubview(groupNameLabel)
-        addSubview(groupCreaterNameLabel)
         addSubview(userInfomationButton)
         
         groupImageView.topAnchor.constraint(equalTo: userDetailsView.bottomAnchor).isActive = true
@@ -125,17 +124,12 @@ class HomeCell: UICollectionViewCell {
         detailsView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         detailsView.leftAnchor.constraint(equalTo: groupImageView.leftAnchor).isActive = true
         detailsView.rightAnchor.constraint(equalTo: groupImageView.rightAnchor).isActive = true
-        detailsView.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        detailsView.heightAnchor.constraint(equalToConstant: 24).isActive = true
 
-        groupNameLabel.topAnchor.constraint(equalTo: detailsView.topAnchor, constant:4).isActive = true
-        groupNameLabel.bottomAnchor.constraint(equalTo: groupCreaterNameLabel.topAnchor).isActive = true
-        groupNameLabel.leftAnchor.constraint(equalTo: detailsView.leftAnchor, constant: 4).isActive = true
+        groupNameLabel.topAnchor.constraint(equalTo: detailsView.topAnchor, constant:2).isActive = true
+        groupNameLabel.bottomAnchor.constraint(equalTo: detailsView.bottomAnchor).isActive = true
+        groupNameLabel.leftAnchor.constraint(equalTo: detailsView.leftAnchor, constant: 2).isActive = true
         groupNameLabel.rightAnchor.constraint(equalTo: detailsView.rightAnchor).isActive = true
-        
-        groupCreaterNameLabel.topAnchor.constraint(equalTo: groupNameLabel.bottomAnchor).isActive = true
-        groupCreaterNameLabel.bottomAnchor.constraint(equalTo: detailsView.bottomAnchor).isActive = true
-        groupCreaterNameLabel.leftAnchor.constraint(equalTo: detailsView.leftAnchor, constant: 4).isActive = true
-        groupCreaterNameLabel.rightAnchor.constraint(equalTo: detailsView.rightAnchor).isActive = true
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
