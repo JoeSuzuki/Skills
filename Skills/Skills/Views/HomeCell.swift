@@ -26,14 +26,13 @@ class HomeCell: UICollectionViewCell {
     }()
  
     let userInfomationButton: UIButton = {
-        let groupView = UIImageView()
-        let url = URL(string: "https://avatars1.githubusercontent.com/u/23642941?s=460&v=4")
-        groupView.kf.setImage(with: url)
-        //        groupView.layer.cornerRadius = 5
-        groupView.contentMode = .scaleAspectFit
-        groupView.clipsToBounds = true
-        groupView.translatesAutoresizingMaskIntoConstraints = false
-        return groupView
+        let button = UIButton()
+        button.setImage(#imageLiteral(resourceName: "Image"), for: .normal)
+        button.imageView?.tintColor = UIColor.main.backgroundGrey
+        button.imageView?.contentMode = .scaleAspectFit
+        button.clipsToBounds = true
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
     }()
 
     let userNameLabel: UILabel = {
@@ -66,14 +65,16 @@ class HomeCell: UICollectionViewCell {
 
     let groupNameLabel: UILabel = {
         let label = UILabel()
-        label.text = "Dr. Andy Office"
+        label.text = "iOS App Developer [OPEN]"
+        label.font = UIFont.boldSystemFont(ofSize: 15)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     let groupCreaterNameLabel: UILabel = {
         let label = UILabel()
-        label.text = "Dr. Andy"
+        label.text = "#Programming"
+        label.font = UIFont.boldSystemFont(ofSize: 15)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -87,7 +88,7 @@ class HomeCell: UICollectionViewCell {
         addSubview(groupImageView)
         addSubview(detailsView)
         addSubview(groupNameLabel)
-        addSubview(groupCreaterNameLabel)
+        addSubview(userInfomationButton)
         
         groupImageView.topAnchor.constraint(equalTo: userDetailsView.bottomAnchor).isActive = true
         groupImageView.bottomAnchor.constraint(equalTo: detailsView.topAnchor).isActive = true
@@ -110,23 +111,25 @@ class HomeCell: UICollectionViewCell {
         userNameLabel.topAnchor.constraint(equalTo: userDetailsView.topAnchor).isActive = true
         userNameLabel.bottomAnchor.constraint(equalTo: userDetailsView.bottomAnchor).isActive = true
         userNameLabel.leftAnchor.constraint(equalTo: profileImageView.rightAnchor, constant: 4).isActive = true
-        userNameLabel.rightAnchor.constraint(equalTo: userDetailsView.rightAnchor).isActive = true
+        userNameLabel.rightAnchor.constraint(equalTo: userInfomationButton.leftAnchor).isActive = true
+
+        userInfomationButton.topAnchor.constraint(equalTo: userDetailsView.topAnchor, constant: 1).isActive = true
+        userInfomationButton.bottomAnchor.constraint(equalTo: userDetailsView.bottomAnchor, constant: 1).isActive = true
+        userInfomationButton.leftAnchor.constraint(equalTo: userNameLabel.rightAnchor, constant: 4).isActive = true
+        userInfomationButton.rightAnchor.constraint(equalTo: userDetailsView.rightAnchor, constant: 4).isActive = true
+        userInfomationButton.widthAnchor.constraint(equalToConstant: 43).isActive = true
+        userInfomationButton.heightAnchor.constraint(equalToConstant: 43).isActive = true
 
         detailsView.topAnchor.constraint(equalTo: groupImageView.bottomAnchor).isActive = true
         detailsView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         detailsView.leftAnchor.constraint(equalTo: groupImageView.leftAnchor).isActive = true
         detailsView.rightAnchor.constraint(equalTo: groupImageView.rightAnchor).isActive = true
-        detailsView.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        detailsView.heightAnchor.constraint(equalToConstant: 24).isActive = true
 
-        groupNameLabel.topAnchor.constraint(equalTo: detailsView.topAnchor, constant:4).isActive = true
-        groupNameLabel.bottomAnchor.constraint(equalTo: groupCreaterNameLabel.topAnchor).isActive = true
-        groupNameLabel.leftAnchor.constraint(equalTo: detailsView.leftAnchor, constant: 4).isActive = true
+        groupNameLabel.topAnchor.constraint(equalTo: detailsView.topAnchor, constant:2).isActive = true
+        groupNameLabel.bottomAnchor.constraint(equalTo: detailsView.bottomAnchor).isActive = true
+        groupNameLabel.leftAnchor.constraint(equalTo: detailsView.leftAnchor, constant: 2).isActive = true
         groupNameLabel.rightAnchor.constraint(equalTo: detailsView.rightAnchor).isActive = true
-        
-        groupCreaterNameLabel.topAnchor.constraint(equalTo: groupNameLabel.bottomAnchor).isActive = true
-        groupCreaterNameLabel.bottomAnchor.constraint(equalTo: detailsView.bottomAnchor).isActive = true
-        groupCreaterNameLabel.leftAnchor.constraint(equalTo: detailsView.leftAnchor, constant: 4).isActive = true
-        groupCreaterNameLabel.rightAnchor.constraint(equalTo: detailsView.rightAnchor).isActive = true
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
