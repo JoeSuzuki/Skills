@@ -4,6 +4,7 @@ extension HomeController {
     
     func setupNavigationBarItems() {
         setupRemainNavItems()
+        setupLeftNavItems()
     }
     
     private func setupRemainNavItems() {
@@ -36,6 +37,7 @@ extension HomeController {
         followButton.setImage(#imageLiteral(resourceName: "Image").withRenderingMode(.alwaysOriginal), for: .normal)
         followButton.widthAnchor.constraint(equalToConstant: 34).isActive = true
         followButton.heightAnchor.constraint(equalToConstant: 34).isActive = true
+        followButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
 
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: followButton)
     }
@@ -48,4 +50,10 @@ extension HomeController {
 
         navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: searchButton)]
     }
+    
+    @objc func buttonAction() {
+        let viewController = ViewController()
+        present(viewController, animated: true, completion: nil)
+    }
+
 }
