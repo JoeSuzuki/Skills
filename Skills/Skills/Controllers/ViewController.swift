@@ -37,6 +37,8 @@ class ViewController: UIViewController {
         view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlePan)))
     }
     
+    var selectedCell: UIView?
+    
     @objc func handlePan(gesture: UIPanGestureRecognizer) {
 
         let width = view.frame.width / CGFloat(numViewPerRow)
@@ -47,14 +49,29 @@ class ViewController: UIViewController {
         let y = Int(location.y / width)
 
         let key = "\(x)|\(y)"
-        let cellView = cells[key]
-        cellView?.backgroundColor = .white
+        guard let cellView = cells[key] else { return }
         
-//        for subview in view.subviews {
-//            if subview.frame.contains(location) {
-//                subview.backgroundColor = .black
-//            }
-//        }
+        if selectedCell != cellView {
+            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+                self.selectedCell?.layer.transform = CATransform3DMakeScale(1, 1, 1)
+            }, completion: nil)
+        }
+        
+        selectedCell = cellView
+        
+        view.bringSubview(toFront: cellView)
+        
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+            cellView.layer.transform = CATransform3DMakeScale(3, 3, 3)
+        }, completion: nil)
+        
+        if gesture.state == .ended {
+            UIView.animate(withDuration: 0.5, delay: 0.25, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: .curveEaseOut, animations: {
+                cellView.layer.transform = CATransform3DIdentity
+            }, completion: { (_) in
+                
+            })
+        }
     }
     
     fileprivate func randomColor() -> UIColor {
