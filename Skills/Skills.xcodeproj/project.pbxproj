@@ -16,6 +16,8 @@
 		FF2EEF772027B24700BCEBB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2EEF752027B24700BCEBB1 /* LaunchScreen.storyboard */; };
 		FFB440E12079E98F005B191C /* LeftBlockDisplayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB440E02079E98F005B191C /* LeftBlockDisplayCell.swift */; };
 		FFB440E32079EB0F005B191C /* UIView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB440E22079EB0F005B191C /* UIView+Utility.swift */; };
+		FFB440E52079FC28005B191C /* NewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB440E42079FC28005B191C /* NewsController.swift */; };
+		FFB440E72079FC7F005B191C /* NewsController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB440E62079FC7F005B191C /* NewsController+NavigationBar.swift */; };
 		FFBD892620390DCE00196CB7 /* HomeHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD891920390DCD00196CB7 /* HomeHeaderCell.swift */; };
 		FFBD892720390DCE00196CB7 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD891A20390DCD00196CB7 /* HomeCell.swift */; };
 		FFBD892820390DCE00196CB7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD891C20390DCE00196CB7 /* Constants.swift */; };
@@ -41,6 +43,8 @@
 		FF2EEF782027B24700BCEBB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFB440E02079E98F005B191C /* LeftBlockDisplayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftBlockDisplayCell.swift; sourceTree = "<group>"; };
 		FFB440E22079EB0F005B191C /* UIView+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utility.swift"; sourceTree = "<group>"; };
+		FFB440E42079FC28005B191C /* NewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsController.swift; sourceTree = "<group>"; };
+		FFB440E62079FC7F005B191C /* NewsController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewsController+NavigationBar.swift"; sourceTree = "<group>"; };
 		FFBD891920390DCD00196CB7 /* HomeHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeaderCell.swift; sourceTree = "<group>"; };
 		FFBD891A20390DCD00196CB7 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		FFBD891C20390DCE00196CB7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 				FFBD891E20390DCE00196CB7 /* HomeController.swift */,
 				FFBD891F20390DCE00196CB7 /* HomeController+NavigationBar.swift */,
 				FF0AC6042077EE5F00EAB2E1 /* ViewController.swift */,
+				FFB440E42079FC28005B191C /* NewsController.swift */,
+				FFB440E62079FC7F005B191C /* NewsController+NavigationBar.swift */,
 				FF0AC60620794DF000EAB2E1 /* ProfileViewController.swift */,
 			);
 			path = Controllers;
@@ -300,8 +306,10 @@
 				FFB440E12079E98F005B191C /* LeftBlockDisplayCell.swift in Sources */,
 				FFBD892720390DCE00196CB7 /* HomeCell.swift in Sources */,
 				FFBD892620390DCE00196CB7 /* HomeHeaderCell.swift in Sources */,
+				FFB440E52079FC28005B191C /* NewsController.swift in Sources */,
 				FFBD892C20390DCE00196CB7 /* UISegmentedControl+Utility.swift in Sources */,
 				FFBD892E20390DCE00196CB7 /* UserTwo.swift in Sources */,
+				FFB440E72079FC7F005B191C /* NewsController+NavigationBar.swift in Sources */,
 				FFB440E32079EB0F005B191C /* UIView+Utility.swift in Sources */,
 				FFBD892B20390DCE00196CB7 /* UIColor+Utility.swift in Sources */,
 				FF2EEF6D2027B24700BCEBB1 /* AppDelegate.swift in Sources */,
