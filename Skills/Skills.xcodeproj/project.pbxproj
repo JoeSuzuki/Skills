@@ -126,9 +126,9 @@
 			isa = PBXGroup;
 			children = (
 				FFBD891920390DCD00196CB7 /* HomeHeaderCell.swift */,
+				FFBD891A20390DCD00196CB7 /* HomeCell.swift */,
 				FFB440E02079E98F005B191C /* LeftBlockDisplayCell.swift */,
 				FFB440E8207A05A4005B191C /* RightBlockDisplayCell.swift */,
-				FFBD891A20390DCD00196CB7 /* HomeCell.swift */,
 			);
 			name = Views;
 			path = Skills/Views;

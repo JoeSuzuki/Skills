@@ -81,14 +81,8 @@ class HomeCell: UICollectionViewCell {
     
     func setupViews() {
         backgroundColor = .white
-        
-        addSubview(profileImageView)
-        addSubview(userNameLabel)
-        addSubview(userDetailsView)
-        addSubview(groupImageView)
-        addSubview(detailsView)
-        addSubview(groupNameLabel)
-        addSubview(userInfomationButton)
+       
+        [profileImageView, userNameLabel, userDetailsView, groupImageView, detailsView, groupNameLabel, userInfomationButton].forEach {addSubview($0)}
         
         groupImageView.topAnchor.constraint(equalTo: userDetailsView.bottomAnchor).isActive = true
         groupImageView.bottomAnchor.constraint(equalTo: detailsView.topAnchor).isActive = true
