@@ -14,6 +14,8 @@
 		FF2EEF722027B24700BCEBB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2EEF702027B24700BCEBB1 /* Main.storyboard */; };
 		FF2EEF742027B24700BCEBB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF2EEF732027B24700BCEBB1 /* Assets.xcassets */; };
 		FF2EEF772027B24700BCEBB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2EEF752027B24700BCEBB1 /* LaunchScreen.storyboard */; };
+		FFB440E12079E98F005B191C /* LeftBlockDisplayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB440E02079E98F005B191C /* LeftBlockDisplayCell.swift */; };
+		FFB440E32079EB0F005B191C /* UIView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB440E22079EB0F005B191C /* UIView+Utility.swift */; };
 		FFBD892620390DCE00196CB7 /* HomeHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD891920390DCD00196CB7 /* HomeHeaderCell.swift */; };
 		FFBD892720390DCE00196CB7 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD891A20390DCD00196CB7 /* HomeCell.swift */; };
 		FFBD892820390DCE00196CB7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD891C20390DCE00196CB7 /* Constants.swift */; };
@@ -37,6 +39,8 @@
 		FF2EEF732027B24700BCEBB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF2EEF762027B24700BCEBB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF2EEF782027B24700BCEBB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFB440E02079E98F005B191C /* LeftBlockDisplayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftBlockDisplayCell.swift; sourceTree = "<group>"; };
+		FFB440E22079EB0F005B191C /* UIView+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utility.swift"; sourceTree = "<group>"; };
 		FFBD891920390DCD00196CB7 /* HomeHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeaderCell.swift; sourceTree = "<group>"; };
 		FFBD891A20390DCD00196CB7 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		FFBD891C20390DCE00196CB7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				FFBD891920390DCD00196CB7 /* HomeHeaderCell.swift */,
+				FFB440E02079E98F005B191C /* LeftBlockDisplayCell.swift */,
 				FFBD891A20390DCD00196CB7 /* HomeCell.swift */,
 			);
 			name = Views;
@@ -146,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				FFBD892120390DCE00196CB7 /* UIColor+Utility.swift */,
+				FFB440E22079EB0F005B191C /* UIView+Utility.swift */,
 				FFBD892220390DCE00196CB7 /* UISegmentedControl+Utility.swift */,
 			);
 			name = Extensions;
@@ -291,10 +297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFB440E12079E98F005B191C /* LeftBlockDisplayCell.swift in Sources */,
 				FFBD892720390DCE00196CB7 /* HomeCell.swift in Sources */,
 				FFBD892620390DCE00196CB7 /* HomeHeaderCell.swift in Sources */,
 				FFBD892C20390DCE00196CB7 /* UISegmentedControl+Utility.swift in Sources */,
 				FFBD892E20390DCE00196CB7 /* UserTwo.swift in Sources */,
+				FFB440E32079EB0F005B191C /* UIView+Utility.swift in Sources */,
 				FFBD892B20390DCE00196CB7 /* UIColor+Utility.swift in Sources */,
 				FF2EEF6D2027B24700BCEBB1 /* AppDelegate.swift in Sources */,
 				FF0AC60720794DF000EAB2E1 /* ProfileViewController.swift in Sources */,
