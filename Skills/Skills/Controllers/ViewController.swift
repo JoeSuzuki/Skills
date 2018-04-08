@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  ViewController.swift
 //  Skills
 //
 //  Created by Joe Suzuki on 4/6/18.
@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let numViewPerRow = 15
+    let numViewPerRow = 3
 
     var cells = [String: UIView]()
     
@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         view.backgroundColor = .white
        
         let width = view.frame.width / CGFloat(numViewPerRow)
-        let height = view.frame.height / width
+        let height = Int(view.frame.height / width)
 
         for j in 0...Int(height){
             for i in 0...numViewPerRow {
@@ -82,5 +82,3 @@ class ViewController: UIViewController {
         return UIColor(red: red, green: green, blue: blue, alpha: 1)
     }
 }
-
-

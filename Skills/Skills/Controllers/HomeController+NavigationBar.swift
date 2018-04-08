@@ -5,6 +5,7 @@ extension HomeController {
     func setupNavigationBarItems() {
         setupRemainNavItems()
         setupLeftNavItems()
+        setupRightNavItems()
     }
     
     private func setupRemainNavItems() {
@@ -47,12 +48,17 @@ extension HomeController {
         searchButton.setImage(#imageLiteral(resourceName: "Image").withRenderingMode(.alwaysOriginal), for: .normal)
         searchButton.widthAnchor.constraint(equalToConstant: 34).isActive = true
         searchButton.heightAnchor.constraint(equalToConstant: 34).isActive = true
+        searchButton.addTarget(self, action: #selector(buttonActions), for: .touchUpInside)
 
         navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: searchButton)]
     }
     
     @objc func buttonAction() {
         let viewController = ViewController()
+        present(viewController, animated: true, completion: nil)
+    }
+    @objc func buttonActions() {
+        let viewController = ProfileViewController()
         present(viewController, animated: true, completion: nil)
     }
 
