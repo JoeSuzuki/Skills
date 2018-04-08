@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Foundation
 
 class NewsController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
     
     let cellId = "cellId"
+    let cellIds = "cellIds"
     let headerId = "headerId"
     
     override func viewDidLoad() {
@@ -19,18 +21,25 @@ class NewsController: UICollectionViewController,UICollectionViewDelegateFlowLay
         
         collectionView?.backgroundColor = UIColor.main.mainColor
         collectionView?.register(LeftBlockDisplayCell.self, forCellWithReuseIdentifier: cellId)
+        collectionView?.register(RightBlockDisplayCell.self, forCellWithReuseIdentifier: cellIds)
         collectionView?.register(HomeHeaderCell.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId)
         
         setupNavigationBarItems()
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return 6
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
-        return cell
+
+        if indexPath.row % 2 == 0 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
+            return cell
+        } else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIds, for: indexPath)
+            return cell
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -46,6 +55,7 @@ class NewsController: UICollectionViewController,UICollectionViewDelegateFlowLay
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         return CGSize(width: view.frame.width, height: 40)
     }
+    
 }
 
 

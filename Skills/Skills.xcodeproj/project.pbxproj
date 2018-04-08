@@ -18,6 +18,7 @@
 		FFB440E32079EB0F005B191C /* UIView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB440E22079EB0F005B191C /* UIView+Utility.swift */; };
 		FFB440E52079FC28005B191C /* NewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB440E42079FC28005B191C /* NewsController.swift */; };
 		FFB440E72079FC7F005B191C /* NewsController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB440E62079FC7F005B191C /* NewsController+NavigationBar.swift */; };
+		FFB440E9207A05A4005B191C /* RightBlockDisplayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB440E8207A05A4005B191C /* RightBlockDisplayCell.swift */; };
 		FFBD892620390DCE00196CB7 /* HomeHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD891920390DCD00196CB7 /* HomeHeaderCell.swift */; };
 		FFBD892720390DCE00196CB7 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD891A20390DCD00196CB7 /* HomeCell.swift */; };
 		FFBD892820390DCE00196CB7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD891C20390DCE00196CB7 /* Constants.swift */; };
@@ -45,6 +46,7 @@
 		FFB440E22079EB0F005B191C /* UIView+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utility.swift"; sourceTree = "<group>"; };
 		FFB440E42079FC28005B191C /* NewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsController.swift; sourceTree = "<group>"; };
 		FFB440E62079FC7F005B191C /* NewsController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewsController+NavigationBar.swift"; sourceTree = "<group>"; };
+		FFB440E8207A05A4005B191C /* RightBlockDisplayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightBlockDisplayCell.swift; sourceTree = "<group>"; };
 		FFBD891920390DCD00196CB7 /* HomeHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeaderCell.swift; sourceTree = "<group>"; };
 		FFBD891A20390DCD00196CB7 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		FFBD891C20390DCE00196CB7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			children = (
 				FFBD891920390DCD00196CB7 /* HomeHeaderCell.swift */,
 				FFB440E02079E98F005B191C /* LeftBlockDisplayCell.swift */,
+				FFB440E8207A05A4005B191C /* RightBlockDisplayCell.swift */,
 				FFBD891A20390DCD00196CB7 /* HomeCell.swift */,
 			);
 			name = Views;
@@ -318,6 +321,7 @@
 				FFBD892A20390DCE00196CB7 /* HomeController+NavigationBar.swift in Sources */,
 				FFBD892920390DCE00196CB7 /* HomeController.swift in Sources */,
 				FF0AC6052077EE6000EAB2E1 /* ViewController.swift in Sources */,
+				FFB440E9207A05A4005B191C /* RightBlockDisplayCell.swift in Sources */,
 				FFBD892D20390DCE00196CB7 /* GroupTwo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
