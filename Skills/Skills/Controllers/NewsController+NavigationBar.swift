@@ -62,12 +62,9 @@ extension NewsController {
     }
     
     @objc func buttonAction() {
-        let viewController = ViewController()
-        present(viewController, animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     @objc func buttonActions() {
-        let viewController = ProfileViewController()
-        present(viewController, animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
-    
 }

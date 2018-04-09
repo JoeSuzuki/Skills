@@ -20,7 +20,7 @@ class RightBlockDisplayCell: UICollectionViewCell {
         view.backgroundColor = .red
         view.layer.borderWidth = 0.5
         view.layer.borderColor = UIColor.white.cgColor
-        view.addBackground(imageName: "Image", contentMode: .scaleAspectFit)
+        view.addBackground(imageName: "Michellesportrait", contentMode: .scaleToFill)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -29,7 +29,7 @@ class RightBlockDisplayCell: UICollectionViewCell {
         view.backgroundColor = .blue
         view.layer.borderWidth = 0.5
         view.layer.borderColor = UIColor.white.cgColor
-        view.addBackground(imageName: "Image", contentMode: .scaleAspectFit)
+        view.addBackground(imageName: "obamaportrait", contentMode: .scaleToFill)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -38,7 +38,7 @@ class RightBlockDisplayCell: UICollectionViewCell {
         view.backgroundColor = .green
         view.layer.borderWidth = 0.5
         view.layer.borderColor = UIColor.white.cgColor
-        view.addBackground(imageName: "Image", contentMode: .scaleAspectFit)
+        view.addBackground(imageName: "Michellesportrait", contentMode: .scaleToFill)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -47,7 +47,7 @@ class RightBlockDisplayCell: UICollectionViewCell {
         view.backgroundColor = .purple
         view.layer.borderWidth = 0.5
         view.layer.borderColor = UIColor.white.cgColor
-        view.addBackground(imageName: "Image", contentMode: .scaleAspectFit)
+        view.addBackground(imageName: "obamaportrait", contentMode: .scaleToFill)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -56,7 +56,7 @@ class RightBlockDisplayCell: UICollectionViewCell {
         view.backgroundColor = .white
         view.layer.borderWidth = 0.5
         view.layer.borderColor = UIColor.white.cgColor
-        view.addBackground(imageName: "Image", contentMode: .scaleAspectFit)
+        view.addBackground(imageName: "Michellesportrait", contentMode: .scaleToFill)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -65,7 +65,7 @@ class RightBlockDisplayCell: UICollectionViewCell {
         view.backgroundColor = .yellow
         view.layer.borderWidth = 0.5
         view.layer.borderColor = UIColor.white.cgColor
-        view.addBackground(imageName: "Image", contentMode: .scaleAspectFit)
+        view.addBackground(imageName: "obamaportrait", contentMode: .scaleToFill)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -74,7 +74,7 @@ class RightBlockDisplayCell: UICollectionViewCell {
         view.backgroundColor = .brown
         view.layer.borderWidth = 0.5
         view.layer.borderColor = UIColor.white.cgColor
-        view.addBackground(imageName: "Image", contentMode: .scaleAspectFit)
+        view.addBackground(imageName: "Michellesportrait", contentMode: .scaleToFill)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -83,7 +83,7 @@ class RightBlockDisplayCell: UICollectionViewCell {
         view.backgroundColor = .orange
         view.layer.borderWidth = 0.5
         view.layer.borderColor = UIColor.white.cgColor
-        view.addBackground(imageName: "Image", contentMode: .scaleAspectFit)
+        view.addBackground(imageName: "obamaportrait", contentMode: .scaleToFill)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -92,11 +92,11 @@ class RightBlockDisplayCell: UICollectionViewCell {
         view.backgroundColor = .gray
         view.layer.borderWidth = 0.5
         view.layer.borderColor = UIColor.white.cgColor
-        view.addBackground(imageName: "Image", contentMode: .scaleAspectFit)
+        view.addBackground(imageName: "Michellesportrait", contentMode: .scaleToFill)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
-    
+
     func setupViews() {
         [redView, blueView, greenView, purpleView, whiteView, yellowView, brownView, orangeView, grayView].forEach {addSubview($0)}
         
