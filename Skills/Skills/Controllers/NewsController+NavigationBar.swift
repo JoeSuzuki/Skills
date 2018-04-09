@@ -1,6 +1,14 @@
+//
+//  NewsController+NavigationBar.swift
+//  Skills
+//
+//  Created by Joe Suzuki on 4/8/18.
+//  Copyright © 2018 Joe Suzuki. All rights reserved.
+//
+
 import UIKit
 
-extension HomeController {
+extension NewsController {
     
     func setupNavigationBarItems() {
         setupRemainNavItems()
@@ -17,7 +25,7 @@ extension HomeController {
         
         navigationController?.navigationBar.barTintColor = UIColor.main.mainColor
         navigationController?.navigationBar.isTranslucent = false
-
+        
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         
@@ -39,7 +47,7 @@ extension HomeController {
         followButton.widthAnchor.constraint(equalToConstant: 34).isActive = true
         followButton.heightAnchor.constraint(equalToConstant: 34).isActive = true
         followButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-
+        
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: followButton)
     }
     
@@ -49,7 +57,7 @@ extension HomeController {
         searchButton.widthAnchor.constraint(equalToConstant: 34).isActive = true
         searchButton.heightAnchor.constraint(equalToConstant: 34).isActive = true
         searchButton.addTarget(self, action: #selector(buttonActions), for: .touchUpInside)
-
+        
         navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: searchButton)]
     }
     
@@ -58,8 +66,8 @@ extension HomeController {
         present(viewController, animated: true, completion: nil)
     }
     @objc func buttonActions() {
-        let newsController = NewsController(collectionViewLayout: UICollectionViewFlowLayout())
-        present(UINavigationController(rootViewController: newsController), animated: true, completion: nil)
+        let viewController = ProfileViewController()
+        present(viewController, animated: true, completion: nil)
     }
-
+    
 }
