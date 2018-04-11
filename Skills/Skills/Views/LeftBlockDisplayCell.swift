@@ -29,7 +29,7 @@ class LeftBlockDisplayCell: UICollectionViewCell {
         view.backgroundColor = .blue
         view.layer.borderWidth = 0.5
         view.layer.borderColor = UIColor.white.cgColor
-        view.addBackground(imageName: "obamaportrait", contentMode: .scaleToFill)
+        view.addBackground(imageName: "Michellesportrait", contentMode: .scaleToFill)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -38,7 +38,7 @@ class LeftBlockDisplayCell: UICollectionViewCell {
         view.backgroundColor = .green
         view.layer.borderWidth = 0.5
         view.layer.borderColor = UIColor.white.cgColor
-        view.addBackground(imageName: "Michellesportrait", contentMode: .scaleToFill)
+        view.addBackground(imageName: "obamaportrait", contentMode: .scaleToFill)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
