@@ -10,6 +10,8 @@
 		30E5D2B67384FF4470F8B40F /* Pods_Skills.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6D9CF747928BB3003C4F87 /* Pods_Skills.framework */; };
 		FF0AC6052077EE6000EAB2E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0AC6042077EE5F00EAB2E1 /* ViewController.swift */; };
 		FF0AC60720794DF000EAB2E1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0AC60620794DF000EAB2E1 /* ProfileViewController.swift */; };
+		FF14FF3E207ED7A300FC3A26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF14FF3D207ED7A200FC3A26 /* GoogleService-Info.plist */; };
+		FF14FF40207EDD6000FC3A26 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF14FF3F207EDD6000FC3A26 /* LoginController.swift */; };
 		FF2EEF6D2027B24700BCEBB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2EEF6C2027B24700BCEBB1 /* AppDelegate.swift */; };
 		FF2EEF722027B24700BCEBB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2EEF702027B24700BCEBB1 /* Main.storyboard */; };
 		FF2EEF742027B24700BCEBB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF2EEF732027B24700BCEBB1 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 		CE6D9CF747928BB3003C4F87 /* Pods_Skills.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skills.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF0AC6042077EE5F00EAB2E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF0AC60620794DF000EAB2E1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FF14FF3D207ED7A200FC3A26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FF14FF3F207EDD6000FC3A26 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		FF2EEF692027B24700BCEBB1 /* Skills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skills.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF2EEF6C2027B24700BCEBB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF2EEF712027B24700BCEBB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -118,6 +122,7 @@
 				FF2EEF732027B24700BCEBB1 /* Assets.xcassets */,
 				FF2EEF752027B24700BCEBB1 /* LaunchScreen.storyboard */,
 				FF2EEF782027B24700BCEBB1 /* Info.plist */,
+				FF14FF3D207ED7A200FC3A26 /* GoogleService-Info.plist */,
 			);
 			path = Skills;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 				FFBD891E20390DCE00196CB7 /* HomeController.swift */,
 				FFBD891F20390DCE00196CB7 /* HomeController+NavigationBar.swift */,
 				FF0AC6042077EE5F00EAB2E1 /* ViewController.swift */,
+				FF14FF3F207EDD6000FC3A26 /* LoginController.swift */,
 				FFB440E42079FC28005B191C /* NewsController.swift */,
 				FFB440E62079FC7F005B191C /* NewsController+NavigationBar.swift */,
 				FF0AC60620794DF000EAB2E1 /* ProfileViewController.swift */,
@@ -240,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF2EEF772027B24700BCEBB1 /* LaunchScreen.storyboard in Resources */,
+				FF14FF3E207ED7A300FC3A26 /* GoogleService-Info.plist in Resources */,
 				FF2EEF742027B24700BCEBB1 /* Assets.xcassets in Resources */,
 				FF2EEF722027B24700BCEBB1 /* Main.storyboard in Resources */,
 			);
@@ -254,9 +261,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Skills/Pods-Skills-resources.sh",
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -270,11 +280,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Skills/Pods-Skills-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -319,6 +337,7 @@
 				FF0AC60720794DF000EAB2E1 /* ProfileViewController.swift in Sources */,
 				FFBD892820390DCE00196CB7 /* Constants.swift in Sources */,
 				FFBD892A20390DCE00196CB7 /* HomeController+NavigationBar.swift in Sources */,
+				FF14FF40207EDD6000FC3A26 /* LoginController.swift in Sources */,
 				FFBD892920390DCE00196CB7 /* HomeController.swift in Sources */,
 				FF0AC6052077EE6000EAB2E1 /* ViewController.swift in Sources */,
 				FFB440E9207A05A4005B191C /* RightBlockDisplayCell.swift in Sources */,
