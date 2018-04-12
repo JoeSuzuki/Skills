@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>255703403555-vjfaphlobtjo4sibi8qit1t9gi3quapr.apps.googleusercontent.com</string>
+	<string>255703403555-a8l49l1hdfffo87oa4mbpqu1kfdsc4n2.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.255703403555-vjfaphlobtjo4sibi8qit1t9gi3quapr</string>
+	<string>com.googleusercontent.apps.255703403555-a8l49l1hdfffo87oa4mbpqu1kfdsc4n2</string>
 	<key>API_KEY</key>
 	<string>AIzaSyCpdlH_Qt83B0IPYDNQOgq_ECubgqVCDsw</string>
 	<key>GCM_SENDER_ID</key>
@@ -17,7 +17,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.suzukiJoe.Shop-lite</string>
+	<string>com.suzukiJoe.Skills</string>
 	<key>PROJECT_ID</key>
 	<string>mapwatch-2c99a</string>
 	<key>STORAGE_BUCKET</key>
@@ -33,7 +33,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:255703403555:ios:0c5d83f6857516b2</string>
+	<string>1:255703403555:ios:e71e181576553994</string>
 	<key>DATABASE_URL</key>
 	<string>https://mapwatch-2c99a.firebaseio.com</string>
 </dict>

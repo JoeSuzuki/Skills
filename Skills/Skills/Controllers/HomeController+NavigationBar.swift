@@ -54,8 +54,8 @@ extension HomeController {
     }
     
     @objc func buttonAction() {
-        let viewController = ViewController()
-        present(viewController, animated: true, completion: nil)
+        let loginController = LoginController()
+        present(loginController, animated: true, completion: nil)
     }
     @objc func buttonActions() {
         let newsController = NewsController(collectionViewLayout: UICollectionViewFlowLayout())
