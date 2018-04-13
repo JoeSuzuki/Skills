@@ -18,6 +18,7 @@ class HomeHeaderCell: UICollectionViewCell {
         segment.selectedSegmentIndex = 0
 //        segment.backgroundColor = UIColor.main.mainColor
         segment.backgroundColor = .white
+        segment.tintColor = UIColor.white
 //        segment.tintColor = UIColor.main.backgroundGrey
         segment.isHighlighted = false
         segment.removeBorders()
