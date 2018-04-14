@@ -121,6 +121,7 @@ class LoginController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor.main.mainColor
+        view.addBackground(imageName: "adrian-infernus-539197-unsplash", contentMode: .scaleToFill)
         
         view.addSubview(inputsContainerView)
         view.addSubview(loginRegisterButton)
